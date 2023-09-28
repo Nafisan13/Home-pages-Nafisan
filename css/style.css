@@ -1,0 +1,242 @@
+:root {
+    --Bg: rgb(0, 28, 45);
+    --Blue: rgb(47, 56, 80);
+    --deep:  rgb(0, 39, 66);
+    --tema: #00e1ff;
+    --Shadow: 0 2px 2px rgba(0,0,0,0.5);
+    /* tema1 */
+    --TBg: rgb(0, 66, 0);
+    --Green: rgb(0, 99, 0);
+    --deepG: rgb(0, 52, 0);
+    --temaG: rgb(0, 255, 0);
+    /* tema 2 */
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    background: url(../gif/Back.gif);
+    background-size: cover;
+    background-size: 100rem;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    transition: 0.5s;
+}
+.hero {
+    position: relative;
+    background-color: var(--Blue);
+    text-shadow: var(--Shadow);
+    z-index: 10;
+    transition: 0.5s;
+}
+.hero .judul-hero {
+    display: inline-flex;
+}
+
+.hero .judul-hero h4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+    margin-left: 2%;
+    margin-right: 30rem;
+    font-size: 2rem;
+    color: var(--tema);
+    transition: 0.5s;
+}
+
+.hero .judul-hero h4 span {
+    color: rgb(255, 255, 255);
+}
+.icons-feathers i {
+    position: absolute;
+}
+
+.i-music, .p-music {
+    color: #fff;
+    cursor: pointer;
+    right: 0;
+    z-index: 9999;
+    margin-left: 50rem;
+    margin-top: 5px;
+}
+.i-music:hover, .p-music:hover {
+    color: var(--tema);
+    cursor: pointer;
+}
+
+
+.atap {
+    position: relative;
+    margin-bottom: 34rem;
+    padding: 1.2rem ;
+    background-color: var(--Blue);
+    text-align: center;
+    transition: 0.5s;
+}
+
+.atap .atap-main a {
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 11rem;
+    color: #fff;
+    text-decoration-line: none;
+    transition: 0.5s;
+}
+.atap a:hover{
+    background-color: var(--deep);
+    border-radius: 10px;
+}
+.logo {
+    z-index: -1;
+    position: fixed;
+}
+.logo img {
+    border: 7px solid rgba(17, 145, 162, 0.566);
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-left: 40.5rem;
+    margin-top: 8rem;
+}
+.tombol button {
+    margin-left: 44rem;
+    border: 1rem;
+    background-color: var(--Blue);
+    color: #fff;
+    padding: 1rem;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0 ;
+}
+.tombol button:hover{
+    background-color: var(--deep);
+    border-radius: 10px 10px 0 0 ;
+}
+
+.content-p, .image-div {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+.content-p h4, .image-div h4 {
+    padding-top: 3rem;
+}
+.content-p h6 {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-bottom: 20rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        /* tema hijau */
+
+body.active {
+    font-size: 1rem;
+    background: url(../gif/tema1.gif);
+    background-size: cover;
+    background-size: 100rem;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    transition: 0.5s;
+}
+
+
+/* hp or tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+    .body{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .atap {
+        background-color: var(--Blue);
+        margin-bottom: 55rem;
+    }
+    .atap .atap-main a {
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 0 1rem;
+        color: #fff;
+        text-decoration-line: none;
+        transition: 0.5s;
+    }
+    .logo img {
+        margin-left: 16rem;
+    }
+    .hero .judul-hero h4 {
+        font-style: italic;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .content-p {
+        margin-right: 1rem;
+    }
+    .content-p h6 {
+        margin-top: 4rem;
+        margin-bottom: 30rem;
+    }
+    .tombol button {
+        margin-left: 16.7rem;
+        border: 1rem;
+        background-color: var(--Blue);
+        color: #fff;
+        padding: 1rem;
+        transition: 0.5s;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .icons-feathers i {
+        position: absolute;
+    }
+    .i-music, .p-music {
+        margin-left: -5rem;
+        color: #fff;
+        cursor: pointer;
+        z-index: 7;
+        margin-top: 4rem;
+    }
+    .i-music:hover, .p-music:hover {
+        color: var(--tema);
+        cursor: pointer;
+    }
+    
+    
+       
+    
+/*                                      ttttttt */
+
+
+
+    .body{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .atap.active {
+        background-color: var(--Blue);
+        margin-bottom: 50rem;
+    }
+    .hero .judul-hero .jdl.active {
+        font-style: italic;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        padding-bottom: 8rem;
+    }
+}
